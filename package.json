@@ -1,6 +1,6 @@
 {
   "name": "insight-ui-btcz",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the zcash network and build your own services with it.",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoinz network and build your own services with it.",
   "version": "0.4.0",
   "repository": "git://github.com/renuzit/insight-ui-btcz.git",
   "contributors": [
