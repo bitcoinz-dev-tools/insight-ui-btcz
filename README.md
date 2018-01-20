@@ -1,6 +1,6 @@
 # Insight UI
 
-A Bitcoin blockchain explorer web application service for [Bitcore Node](https://github.com/bitpay/bitcore-node) using the [Insight API](https://github.com/str4d/insight-api-zcash).
+A Bitcoin blockchain explorer web application service for [Bitcore Node](https://github.com/bitpay/bitcore-node) using the [Insight API](https://github.com/renuzit/insight-api-btcz).
 
 ## Quick Start
 
@@ -70,11 +70,11 @@ compile***.
 
 ## Note
 
-For more details about the [Insight API](https://github.com/str4d/insight-api-zcash) configuration and end-points, go to [Insight API GitHub repository](https://github.com/str4d/insight-api-zcash).
+For more details about the [Insight API](https://github.com/renuzit/insight-api-btcz) configuration and end-points, go to [Insight API GitHub repository](https://github.com/renuzit/insight-api-btcz).
 
 ## Contribute
 
-Contributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/str4d/insight-ui-zcash).
+Contributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/renuzit/insight-ui-btcz).
 
 
 ## License

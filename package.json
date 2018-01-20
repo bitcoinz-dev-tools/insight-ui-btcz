@@ -1,8 +1,8 @@
 {
-  "name": "insight-ui-zcash",
+  "name": "insight-ui-btcz",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the zcash network and build your own services with it.",
   "version": "0.4.0",
-  "repository": "git://github.com/str4d/insight-ui-zcash.git",
+  "repository": "git://github.com/renuzit/insight-ui-btcz.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -30,9 +30,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/str4d/insight-ui-zcash/issues"
+    "url": "https://github.com/renuzit/insight-ui-btcz/issues"
   },
-  "homepage": "https://github.com/str4d/insight-ui-zcash",
+  "homepage": "https://github.com/renuzit/insight-ui-btcz",
   "license": "MIT",
   "keywords": [
     "insight",
