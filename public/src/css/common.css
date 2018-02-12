@@ -392,7 +392,7 @@ margin-left: 0;
 }
 
 .txvalues-primary {
-  background-color: #8DC429;
+  background-color: #c69c6d;
 }
 
 .txvalues-default {
@@ -401,11 +401,11 @@ margin-left: 0;
 }
 
 .txvalues-success {
-  background-color: #2FA4D7;
+  background-color: #43b0cc;
 }
 
 .txvalues-danger {
-  background-color: #AC0015;
+  background-color: #4c4b45;
 }
 
 .txvalues-normal {
