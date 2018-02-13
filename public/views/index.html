@@ -63,17 +63,19 @@
         <h2 translate>About</h2>
         <p translate><strong>insight</strong>  is an <a href="https://insight.is/"
           target="_blank">open-source BitcoinZ blockchain explorer</a> with complete REST and websocket APIs that can be used for writing web wallets and other apps  that need more advanced blockchain queries than provided by zcashd RPC.  Check out the <a href="https://github.com/renuzit/insight-ui-btcz" target="_blank">source code</a>.</p>
-        <p translate><strong>insight</strong> is still in development, so be sure to report any bugs and provide feedback for improvement at our <a href="https://github.com/renuzit/insight-ui-btcz/issues" target="_blank">github issue tracker</a>.</p>
+        <p translate><strong>Message</strong> 
+        To display your pool under 'Mined By' please edit your Z-NOMP hex string in:</span>
+        </p>
+        <pre>/z-nomp/node_modules/stratum-pool/lib/transactions.js</pre>
+        <p translate>Find:</p>
+        <pre><code>Buffer('5a2d4e4f4d50212068747470733a2f2f6769746875622e636f6d2f6a6f7368756179616275742f7a2d6e6f6d70', 'hex')]); //Z-NOMP!</code></pre>
+        <p translate>
+          HEX encode a string containing the name of your pool and the URL and replace the above with your own HEX string. The encoded string should be of the following format:<pre>YourPoolName https://your.pool.url</pre>Then submit your HEX string to <em>#pool-operators</em> in <a href="https://slack.btcz.rocks" target="_blank">slack</a>.
+        </p>
+        <p translate>
+          <strong>BitcoinZ client side javascript wallet</strong> is now available <br><a href="https://www.mybitcoinzwallet.com/"target="_blank">BitcoinZ Wallet</a></strong>
+        </p>
         <p data-ng-if='currency.testnet'><strong>This explorer is currently showing testnet Zcash!</strong></p>
-        <div id="powered" class="row">
-          <div class="powered-text">
-            <small class="text-muted" translate>Powered by</small>
-          </div>
-          <a href="http://bitcore.io" target="_blank" class="bitcore" title="Bitcore"></a>
-          <a href="http://angularjs.org" target="_blank" class="angularjs" title="AngularJS"></a>
-          <a href="https://code.google.com/p/leveldb/" target="_blank" class="leveldb" title="LevelDB"></a>
-          <a href="http://nodejs.org" target="_blank" class="nodejs" title="NodeJs"></a>
-        </div>
       </div> <!-- END OF COL-3 -->
     </div>
   </div>
