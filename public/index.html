@@ -6,11 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="fragment" content="!">
-	<title data-ng-if="currency.testnet" data-ng-bind="$root.title + $root.titleDetail + ' | Testnet BitcoinZ'">Testnet BitcoinZ</title>
-	<title data-ng-if="!currency.testnet" data-ng-bind="$root.title + $root.titleDetail + ' | BitcoinZ'">BitcoinZ</title>
+	<title data-ng-bind="$root.title + $root.titleDetail + ' | BitcoinZ Block Explorer'">BitcoinZ Block Explorer</title>
 	<meta name="keywords" content="zcash, transactions, blocks, address, block chain, best block, mining difficulty, hash serialized">
-	<meta data-ng-if="currency.testnet" name="description" content="BitcoinZ Insight. View detailed information on all testnet BitcoinZ transactions and block. {{ $root.title + $root.titleDetail }}">
-	<meta data-ng-if="!currency.testnet" name="description" content="BitcoinZ Insight. View detailed information on all BitcoinZ transactions and block. {{ $root.title + $root.titleDetail }}">
+	<meta name="description" content="BitcoinZ Block Explorer. View detailed information on all BitcoinZ transactions and blocks. {{ $root.title + $root.titleDetail }}">
 	<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic">
 	<link rel="stylesheet" href="css/main.min.css">
