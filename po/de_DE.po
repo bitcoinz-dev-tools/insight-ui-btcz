@@ -25,16 +25,16 @@ msgid ""
 "<strong>insight</strong>  is an <a href=\"http://live.insight.is/\" target="
 "\"_blank\">open-source BitcoinZ blockchain explorer</a> with complete REST "
 "and websocket APIs that can be used for writing web wallets and other apps  "
-"that need more advanced blockchain queries than provided by zcashd RPC.  "
-"Check out the <a href=\"https://github.com/renuzit/insight-ui-btcz\" target=\"_blank"
+"that need more advanced blockchain queries than provided by bitcoinzd RPC.  "
+"Check out the <a href=\"https://github.com/MarcelusCH/insight-ui-btcz\" target=\"_blank"
 "\">source code</a>."
 msgstr ""
 "<strong>insight</strong> ist ein <a href=\"http://live.insight.is/\" target="
 "\"_blank\">Open Source BitcoinZ Blockchain Explorer</a> mit vollständigen "
 "REST und Websocket APIs um eigene Wallets oder Applikationen zu "
 "implementieren. Hierbei werden fortschrittlichere Abfragen der Blockchain "
-"ermöglicht, bei denen die RPC des Zcashd nicht mehr ausreichen. Der "
-"aktuelle <a href=\"https://github.com/renuzit/insight-ui-btcz\" target=\"_blank"
+"ermöglicht, bei denen die RPC des Bitcoinzd nicht mehr ausreichen. Der "
+"aktuelle <a href=\"https://github.com/MarcelusCH/insight-ui-btcz\" target=\"_blank"
 "\">Quellcode</a> ist auf Github zu finden."
 
 #: public/views/index.html
@@ -45,7 +45,7 @@ msgid ""
 msgstr ""
 "<strong>insight</strong> befindet sich aktuell noch in der Entwicklung. "
 "Bitte sende alle gefundenen Fehler (Bugs) und Feedback zur weiteren "
-"Verbesserung an unseren <a href=\"https://github.com/renuzit/insight-ui-btcz/issues"
+"Verbesserung an unseren <a href=\"https://github.com/MarcelusCH/insight-ui-btcz/issues"
 "\" target=\"_blank\">Github Issue Tracker</a>."
 
 #: public/views/index.html
@@ -70,7 +70,7 @@ msgstr "Bester Block"
 
 #: public/views/status.html
 msgid "BitcoinZ node information"
-msgstr "Zcash-Node Info"
+msgstr "Bitcoinz-Node Info"
 
 #: public/views/block.html
 msgid "Block"
@@ -91,11 +91,11 @@ msgstr "Serialisierte Bytes"
 
 #: public/views/includes/connection.html
 msgid ""
-"Can't connect to zcashd to get live updates from the p2p network. (Tried "
-"connecting to zcashd at {{host}}:{{port}} and failed.)"
+"Can't connect to bitcoinzd to get live updates from the p2p network. (Tried "
+"connecting to bitcoinzd at {{host}}:{{port}} and failed.)"
 msgstr ""
-"Es ist nicht möglich mit Zcashd zu verbinden um live Aktualisierungen vom "
-"P2P Netzwerk zu erhalten. (Verbindungsversuch zu zcashd an {{host}}:"
+"Es ist nicht möglich mit Bitcoinzd zu verbinden um live Aktualisierungen vom "
+"P2P Netzwerk zu erhalten. (Verbindungsversuch zu bitcoinzd an {{host}}:"
 "{{port}} ist fehlgeschlagen.)"
 
 #: public/views/includes/connection.html
@@ -199,8 +199,8 @@ msgid "Last Block"
 msgstr "Letzter Block"
 
 #: public/views/status.html
-msgid "Last Block Hash (Zcashd)"
-msgstr "Letzter Hash (Zcashd)"
+msgid "Last Block Hash (Bitcoinzd)"
+msgstr "Letzter Hash (Bitcoinzd)"
 
 #: public/views/index.html
 msgid "Latest Blocks"

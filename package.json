@@ -2,7 +2,7 @@
   "name": "insight-ui-btcz",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoinz network and build your own services with it.",
   "version": "0.4.0",
-  "repository": "git://github.com/renuzit/insight-ui-btcz.git",
+  "repository": "git://github.com/MarcelusCH/insight-ui-btcz.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -30,19 +30,19 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/renuzit/insight-ui-btcz/issues"
+    "url": "https://github.com/MarcelusCH/insight-ui-btcz/issues"
   },
-  "homepage": "https://github.com/renuzit/insight-ui-btcz",
+  "homepage": "https://github.com/MarcelusCH/insight-ui-btcz",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
-    "zcash",
+    "bitcoinz",
     "bitcore",
     "front-end"
   ],
-  "bitcoreNode": "bitcore-node-zcash",
+  "bitcoreNode": "bitcore-node-btcz",
   "dependencies": {
   },
   "devDependencies": {
