@@ -21,7 +21,7 @@
 </div>
 <div class="row line-mid">
   <div class="col-md-12">
-    <div class="row" data-ng-if="!tx.bindingSig && (!tx.vjoinsplit || tx.vjoinsplit.length==0)">
+    <div class="row" data-ng-if="!tx.bindingSig && (!tx.vJoinSplit || tx.vJoinSplit.length==0)">
       <div class="col-md-12 transaction-vin-vout">
         <div class="ellipsis">
           <span translate>No Shielded Spends and Outputs</span>
@@ -75,18 +75,18 @@
         </div>
       </div>
     </div>
-    <div class="row" data-ng-if="(!tx.vjoinsplit || tx.vjoinsplit.length == 0) && !tx.bindingSig">
+    <div class="row" data-ng-if="(!tx.vJoinSplit || tx.vJoinSplit.length == 0) && !tx.bindingSig">
       <div class="col-md-12 transaction-vin-vout">
         <div class="ellipsis">
           <span translate>No JoinSplits</span>
         </div>
       </div>
     </div>
-    <div class="row" data-ng-if="tx.vjoinsplit && tx.vjoinsplit.length != 0">
+    <div class="row" data-ng-if="tx.vJoinSplit && tx.vJoinSplit.length != 0">
 
       <!-- <<< Simple view -->
       <div data-ng-if="!itemsExpanded" data-ng-init="currentJSNoExpanded=0; sizeJSNoExpanded=5">
-        <div class="panel panel-default" data-ng-repeat="vjs in tx.vjoinsplit| startFrom:currentJSNoExpanded*sizeJSNoExpanded | limitTo:sizeJSNoExpanded">
+        <div class="panel panel-default" data-ng-repeat="vjs in tx.vJoinSplit| startFrom:currentJSNoExpanded*sizeJSNoExpanded | limitTo:sizeJSNoExpanded">
           <div class="panel-body transaction-vin-vout">
             <div class="col-md-3 col-xs-12">
               <div class="pull-right btc-value">
@@ -127,17 +127,17 @@
             </div>
           </div>
         </div>
-        <div class="showmore_collapse text-left" data-ng-show="tx.vjoinsplit.length > 5" data-ng-class="{ 'hidden': itemsExpanded}">
-          <button type="button" class="btn btn-default btn-sm" ng-hide="sizeJSNoExpanded != tx.vjoinsplit.length" ng-click="currentJSNoExpanded=0; sizeJSNoExpanded=5"><i class="glyphicon glyphicon-chevron-up"></i>
+        <div class="showmore_collapse text-left" data-ng-show="tx.vJoinSplit.length > 5" data-ng-class="{ 'hidden': itemsExpanded}">
+          <button type="button" class="btn btn-default btn-sm" ng-hide="sizeJSNoExpanded != tx.vJoinSplit.length" ng-click="currentJSNoExpanded=0; sizeJSNoExpanded=5"><i class="glyphicon glyphicon-chevron-up"></i>
             <span translate>Show less</span></button>
-          <button type="button" class="btn btn-default btn-sm" ng-hide="currentJSNoExpanded >= tx.vjoinsplit.length/sizeJSNoExpanded - 1" ng-click="currentJSNoExpanded=0; sizeJSNoExpanded=tx.vjoinsplit.length"><i class="glyphicon glyphicon-chevron-down"></i>
+          <button type="button" class="btn btn-default btn-sm" ng-hide="currentJSNoExpanded >= tx.vJoinSplit.length/sizeJSNoExpanded - 1" ng-click="currentJSNoExpanded=0; sizeJSNoExpanded=tx.vJoinSplit.length"><i class="glyphicon glyphicon-chevron-down"></i>
             <span translate>Show more</span></button>
         </div>
       </div>
 
       <!-- <<< Full view -->
-      <div data-ng-if="itemsExpanded" data-ng-init="currentJSExpanded=0; sizeJSExpanded=(from_vjs) ? tx.vjoinsplit.length : 5; fromVjsCollapsed=(from_vjs)">
-        <div data-ng-repeat="vjs in tx.vjoinsplit| startFrom:currentJSExpanded*sizeJSExpanded | limitTo:sizeJSExpanded" data-ng-if="fromVjsCollapsed ? v_index == vjs.n : 1">
+      <div data-ng-if="itemsExpanded" data-ng-init="currentJSExpanded=0; sizeJSExpanded=(from_vjs) ? tx.vJoinSplit.length : 5; fromVjsCollapsed=(from_vjs)">
+        <div data-ng-repeat="vjs in tx.vJoinSplit| startFrom:currentJSExpanded*sizeJSExpanded | limitTo:sizeJSExpanded" data-ng-if="fromVjsCollapsed ? v_index == vjs.n : 1">
           <div class="panel panel-default transaction-vin-vout">
             <div class="panel-body">
               <div class="col-md-3 col-xs-12">
@@ -181,15 +181,15 @@
           </div> <!-- END OF PANEL-DEFAULT -->
         </div>
         <div class="text-left">
-          <button type="button" class="btn btn-default btn-sm" data-ng-show="(from_vjs) && tx.vjoinsplit.length > 1" data-ng-disabled="fromVjsCollapsed" data-ng-click="currentJSExpanded=0; sizeJSExpanded=tx.vjoinsplit.length;fromVjsCollapsed=1">
+          <button type="button" class="btn btn-default btn-sm" data-ng-show="(from_vjs) && tx.vJoinSplit.length > 1" data-ng-disabled="fromVjsCollapsed" data-ng-click="currentJSExpanded=0; sizeJSExpanded=tx.vJoinSplit.length;fromVjsCollapsed=1">
             <span translate>Show input</span> #{{ v_index }}</button>
-          <button type="button" class="btn btn-default btn-sm" data-ng-show="(from_vjs) && tx.vjoinsplit.length > 1" data-ng-disabled="!fromVinCollapsed" data-ng-click="currentJSExpanded=0; sizeJSExpanded=tx.vjoinsplit.length;fromVjsCollapsed=0">
+          <button type="button" class="btn btn-default btn-sm" data-ng-show="(from_vjs) && tx.vJoinSplit.length > 1" data-ng-disabled="!fromVinCollapsed" data-ng-click="currentJSExpanded=0; sizeJSExpanded=tx.vJoinSplit.length;fromVjsCollapsed=0">
             <span translate>Show all</span></button>
         </div>
-        <div class="showmore_collapse text-left" data-ng-show="tx.vjoinsplit.length > 5 && !fromVjsCollapsed" data-ng-class="{ 'hidden': !itemsExpanded}">
-          <button type="button" class="btn btn-default btn-sm" ng-hide="sizeJSExpanded != tx.vjoinsplit.length" ng-click="currentJSExpanded=0; sizeJSExpanded=5"><i class="glyphicon glyphicon-chevron-up"></i>
+        <div class="showmore_collapse text-left" data-ng-show="tx.vJoinSplit.length > 5 && !fromVjsCollapsed" data-ng-class="{ 'hidden': !itemsExpanded}">
+          <button type="button" class="btn btn-default btn-sm" ng-hide="sizeJSExpanded != tx.vJoinSplit.length" ng-click="currentJSExpanded=0; sizeJSExpanded=5"><i class="glyphicon glyphicon-chevron-up"></i>
             <span translate>Show less</span></button>
-          <button type="button" class="btn btn-default btn-sm" ng-hide="currentJSExpanded >= tx.vjoinsplit.length/sizeJSExpanded - 1" ng-click="currentJSExpanded=0; sizeJSExpanded=tx.vjoinsplit.length"><i class="glyphicon glyphicon-chevron-down"></i>
+          <button type="button" class="btn btn-default btn-sm" ng-hide="currentJSExpanded >= tx.vJoinSplit.length/sizeJSExpanded - 1" ng-click="currentJSExpanded=0; sizeJSExpanded=tx.vJoinSplit.length"><i class="glyphicon glyphicon-chevron-down"></i>
             <span translate>Show more</span></button>
         </div>
       </div>
