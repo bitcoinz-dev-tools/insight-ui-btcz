@@ -1,6 +1,8 @@
 # Insight UI
 
-A Bitcoin blockchain explorer web application service for [Bitcore Node](https://github.com/bitpay/bitcore-node) using the [Insight API](https://github.com/renuzit/insight-api-btcz).
+A BitcoinZ blockchain explorer web application service for [Bitcore Node](https://github.com/bitcoinz-dev-tools/bitcore-node-btcz) using the [Insight API](https://github.com/bitcoinz-dev-tools/insight-api-btcz).
+
+
 
 ## Quick Start
 
@@ -9,17 +11,21 @@ Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io
 ## Getting Started
 
 To manually install all of the necessary components, you can run these commands:
+(See [bitcore-node-btcz configuration doc](https://github.com/bitcoinz-dev-tools/bitcore-node-btcz/blob/master/docs/services/bitcoind.md) for more details about node configuration)
 
 ```bash
-npm install -g bitcore-node
-bitcore-node create mynode
-cd mynode
-bitcore-node install insight-api
-bitcore-node install insight-ui
-bitcore-node start
+git clone https://github.com/bitcoinz-dev-tools/bitcore-node-btcz.git
+cd bitcore-node-btcz
+npm install
+cd ..
+bitcore-node-btcz/bin/bitcore-node create -d /.bitcoinz btcz-explorer
+cd btcz-explorer
+../bitcore-node install bitcoinz-dev-tools/insight-api-btcz bitcoinz-dev-tools/insight-ui-btcz
+../bitcore-node-btcz/bin/bitcore-node start
 ```
+See [bitcore-node-btcz configuration doc](https://github.com/bitcoinz-dev-tools/bitcore-node-btcz/blob/master/docs/services/bitcoind.md) for more details about node configuration
 
-Open a web browser to `http://localhost:3001/insight/`
+Open a web browser to `http://localhost:3001/`
 
 ## Development
 
@@ -70,11 +76,11 @@ compile***.
 
 ## Note
 
-For more details about the [Insight API](https://github.com/renuzit/insight-api-btcz) configuration and end-points, go to [Insight API GitHub repository](https://github.com/renuzit/insight-api-btcz).
+For more details about the [Insight API](https://github.com/bitcoinz-dev-tools/insight-api-btcz) configuration and end-points, go to [Insight API GitHub repository](https://github.com/bitcoinz-dev-tools/insight-api-btcz).
 
 ## Contribute
 
-Contributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/renuzit/insight-ui-btcz).
+Contributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/bitcoinz-dev-tools/insight-ui-btcz).
 
 
 ## License

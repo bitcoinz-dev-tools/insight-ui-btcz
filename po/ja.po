@@ -24,15 +24,15 @@ msgid ""
 "<strong>insight</strong>  is an <a href=\"http://live.insight.is/\" target="
 "\"_blank\">open-source BitcoinZ blockchain explorer</a> with complete REST "
 "and websocket APIs that can be used for writing web wallets and other apps  "
-"that need more advanced blockchain queries than provided by zcashd RPC.  "
-"Check out the <a href=\"https://github.com/renuzit/insight-ui-btcz\" target=\"_blank"
+"that need more advanced blockchain queries than provided by bitcoinzd RPC.  "
+"Check out the <a href=\"https://github.com/bitcoinz-dev-tools/insight-ui-btcz\" target=\"_blank"
 "\">source code</a>."
 msgstr ""
-"<strong>insight</strong>は、zcashd RPCの提供するものよりも詳細なブロック"
+"<strong>insight</strong>は、bitcoinzd RPCの提供するものよりも詳細なブロック"
 "チェインへの問い合わせを必要とするウェブウォレットやその他のアプリを書くのに"
 "使える、完全なRESTおよびwebsocket APIを備えた<a href=\"http://live.insight."
 "is/\" target=\"_blank\">オープンソースのビットコインブロックエクスプローラ</"
-"a>です。<a href=\"https://github.com/renuzit/insight-ui-btcz\" target=\"_blank\">ソース"
+"a>です。<a href=\"https://github.com/bitcoinz-dev-tools/insight-ui-btcz\" target=\"_blank\">ソース"
 "コード</a>を確認"
 
 #: public/views/index.html
@@ -75,11 +75,11 @@ msgstr "最良ブロック"
 
 #: public/views/messages_verify.html
 msgid "BitcoinZ comes with a way of signing arbitrary messages."
-msgstr "Zcashには任意のメッセージを署名する昨日が備わっています。"
+msgstr "Bitcoinzには任意のメッセージを署名する昨日が備わっています。"
 
 #: public/views/status.html
 msgid "BitcoinZ node information"
-msgstr "Zcashノード情報"
+msgstr "Bitcoinzノード情報"
 
 #: public/views/block.html
 msgid "Block"
@@ -104,10 +104,10 @@ msgstr "シリアライズ後の容量 (バイト)"
 
 #: public/views/includes/connection.html
 msgid ""
-"Can't connect to zcashd to get live updates from the p2p network. (Tried "
-"connecting to zcashd at {{host}}:{{port}} and failed.)"
+"Can't connect to bitcoinzd to get live updates from the p2p network. (Tried "
+"connecting to bitcoinzd at {{host}}:{{port}} and failed.)"
 msgstr ""
-"P2Pネットワークからライブ情報を取得するためにzcashdへ接続することができませ"
+"P2Pネットワークからライブ情報を取得するためにbitcoinzdへ接続することができませ"
 "んでした。({{host}}:{{port}} への接続を試みましたが、失敗しました。)"
 
 #: public/views/includes/connection.html
@@ -213,8 +213,8 @@ msgid "Last Block"
 msgstr "直前のブロック"
 
 #: public/views/status.html
-msgid "Last Block Hash (Zcashd)"
-msgstr "直前のブロックのハッシュ値 (Zcashd)"
+msgid "Last Block Hash (Bitcoinzd)"
+msgstr "直前のブロックのハッシュ値 (Bitcoinzd)"
 
 #: public/views/index.html
 msgid "Latest Blocks"
@@ -428,7 +428,7 @@ msgid ""
 "This form can be used to broadcast a raw transaction in hex format over\n"
 "        the BitcoinZ network."
 msgstr ""
-"このフォームでは、16進数フォーマットの生のトランザクションをZcashネットワー"
+"このフォームでは、16進数フォーマットの生のトランザクションをBitcoinzネットワー"
 "ク上に配信することができます。"
 
 #: public/views/messages_verify.html
@@ -436,7 +436,7 @@ msgid ""
 "This form can be used to verify that a message comes from\n"
 "        a specific BitcoinZ address."
 msgstr ""
-"このフォームでは、メッセージが特定のZcashアドレスから来たかどうかを検証する"
+"このフォームでは、メッセージが特定のBitcoinzアドレスから来たかどうかを検証する"
 "ことができます。"
 
 #: public/views/status.html
@@ -453,7 +453,7 @@ msgstr "今日"
 
 #: public/views/status.html
 msgid "Total Amount"
-msgstr "Zcash総量"
+msgstr "Bitcoinz総量"
 
 #: public/views/address.html
 msgid "Total Received"
