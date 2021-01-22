@@ -11,7 +11,6 @@ Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io
 ## Getting Started
 
 To manually install all of the necessary components, you can run these commands:
-[bitcore-node-btcz configuration doc](https://github.com/bitcoinz-dev-tools/bitcore-node-btcz/blob/master/docs/services/bitcoind.md)
 
 ```bash
 git clone https://github.com/bitcoinz-dev-tools/bitcore-node-btcz.git
@@ -23,6 +22,7 @@ cd btcz-explorer
 ../bitcore-node install bitcoinz-dev-tools/insight-api-btcz bitcoinz-dev-tools/insight-ui-btcz
 ../bitcore-node-btcz/bin/bitcore-node start
 ```
+See [bitcore-node-btcz configuration doc](https://github.com/bitcoinz-dev-tools/bitcore-node-btcz/blob/master/docs/services/bitcoind.md) for more details about node configuration
 
 Open a web browser to `http://localhost:3001/`
 
